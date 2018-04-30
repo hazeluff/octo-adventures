@@ -1,5 +1,16 @@
 ﻿public interface IUnit
 {
+    public enum Class
+    {
+
+    }
+
+    string Name { get; }
+    int Level { get; }
+    Class Class { get; }
+    int ExpCurrent { get; }
+    int ExpToNext { get; }
+
     // Base Stats
     int HP { get; }
     int HPCurrent { get; }
