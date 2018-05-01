@@ -1,4 +1,4 @@
-﻿public class IEquipment {
+﻿public interface IEquipment {
     int HP { get; }
     int MP { get; }
     int Atk { get; }
@@ -10,5 +10,5 @@
 
     int Mv { get; }
 
-    float Res(Element element) { get; }
+    float ElemRes(Element element);
 }
