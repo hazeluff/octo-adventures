@@ -16,6 +16,7 @@ public class StageCamera : MonoBehaviour {
 #endif
 
     public void setAngle(float angle) {
+        this.angle = angle;
         this.transform.localPosition = StageCameraHelper.CalculateNewPosition(this.transform.localPosition, angle);
         Vector3 newRotation = this.transform.localEulerAngles;
         newRotation.x = angle;
