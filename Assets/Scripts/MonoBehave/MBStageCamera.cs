@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [ExecuteInEditMode]
-public class StageCamera : MonoBehaviour {
+public class MBStageCamera : MonoBehaviour {
 
     public float angle = 30;
 
