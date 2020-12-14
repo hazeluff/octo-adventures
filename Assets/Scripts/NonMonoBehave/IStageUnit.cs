@@ -1,19 +1,26 @@
 ﻿using System.Collections.Generic;
 
-public interface IStageUnit : IUnit {
+public interface IStageUnit {
+
+    IUnitProfile Profile { get; }
+    Faction Faction { get; }
+
     MapCoordinate Position { get; }
+    
+    List<IUserStatusEffect> StatusEffects { get; }
 
-    List<IDamageInstance> DamageInstance { get; }
-    List<IUserStatusEffect> Status { get; }
+    int c_HP { get; }
+    int c_MP { get; }
+    int c_Atk { get; }
+    int c_Def { get; }
+    int c_Int { get; }
+    int c_Res { get; }
+    int c_Hit { get; }
+    int c_Spd { get; }
+    int c_Mv { get; }
+    float c_ElemRes(Element element);
 
-    int HP_Current { get; }
-    int MP_Current { get; }
-    int Atk_Current { get; }
-    int Def_Current { get; }
-    int Int_Current { get; }
-    int Res_Current { get; }
-    int Hit_Current { get; }
-    int Spd_Current { get; }
-    int Mv_Current { get; }
-    float ElemRes_Current(Element element);
+    // Actions
+    void Attack(IStageUnit target);
+    void ReceiveAttack(IDamageSource damage);
 }

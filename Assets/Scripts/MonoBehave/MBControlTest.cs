@@ -26,6 +26,6 @@ public class MBControlTest : MonoBehaviour {
         LOGGER.info("Left Stick: " + InputManager.get().LEFT_STICK.Vector);
         LOGGER.info("Right Stick: " + InputManager.get().RIGHT_STICK.Vector);
         LOGGER.info("D Pad: " + InputManager.get().DPAD.Vector);
-        LOGGER.info("Keyboard \"Stick\"" + InputManager.get().KEYBOARD_STICK.Vector);
+        LOGGER.info("Keyboard \"Stick\"" + InputManager.get().D_PAD.Vector);
     }
 }

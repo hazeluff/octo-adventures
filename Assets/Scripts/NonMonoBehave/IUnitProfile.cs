@@ -1,5 +1,4 @@
-﻿public interface IUnit
-{
+﻿public interface IUnitProfile {
     string Name { get; }
     int Level { get; }
     UnitClass Class { get; }
@@ -24,6 +23,6 @@
     float ElemRes(Element element);
 
     // Gear
-    IWeapon Weapon { get; }
+    Weapon Weapon { get; }
     IEquipment[] Equipments { get; }
 }

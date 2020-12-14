@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1832bf64f0b1e3d4fb18ecec48c896b5, type: 3}
+  m_Name: Fighter
+  m_EditorClassIdentifier: 
+  _name: Fighter
+  _level: 1
+  _class: 0
+  _expCurrent: 0
+  _hp: 20
+  _mp: 5
+  _atk: 7
+  _def: 6
+  _int: 4
+  _res: 4
+  _hit: 4
+  _spd: 4
+  _mv: 3
+  _weapon: {fileID: 11400000, guid: dbe37426650eb7c449704987cfd8338b, type: 2}

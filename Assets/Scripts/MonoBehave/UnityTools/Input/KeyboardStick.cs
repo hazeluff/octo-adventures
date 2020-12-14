@@ -46,7 +46,7 @@ public class KeyboardStick : Stick {
     private KeyboardStick(string h, string v) : base(h, v) { }
     public KeyboardStick() : base() { }
 
-    public override void update() {
+    public override void UpdateState() {
         last_UP = HELD_UP;
         last_DOWN = HELD_DOWN;
         last_LEFT = HELD_LEFT;

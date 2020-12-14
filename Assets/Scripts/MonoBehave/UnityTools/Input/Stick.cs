@@ -9,7 +9,7 @@ public abstract class Stick {
     public virtual Vector2 Vector { get { return new Vector2(Horizontal, Vertical); } }
     public Vector2 Vector2 { get { return Vector; } }
     public Vector3 Vector3 { get { return new Vector3(Horizontal, Vertical, 0.0f); } }
-    public bool anyInput { get { return Horizontal != 0.0f || Vertical != 0.0f; } }
+    public bool AnyInput { get { return Horizontal != 0.0f || Vertical != 0.0f; } }
 
     public abstract bool UP { get; }
     public abstract bool DOWN { get; }
@@ -42,5 +42,5 @@ public abstract class Stick {
 
     protected Stick() : this(null,null) { }
 
-    public abstract void update();
+    public abstract void UpdateState();
 }
